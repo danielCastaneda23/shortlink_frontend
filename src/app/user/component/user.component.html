@@ -1,0 +1,11 @@
+<form class="form__container" [formGroup]="formHandler" (ngSubmit)="handlerUserService()">
+    <div class="form__element">
+        <label for="ema">User Email: </label>
+        <input id="ema" type="email" formControlName="email">
+    </div>
+    <div class="form__element">
+        <label for="pass">User Password: </label>
+        <input id="pass" type="password" formControlName="password">
+    </div>
+    <button type="submit" [disabled]="!formHandler.valid">Login</button>
+</form>
