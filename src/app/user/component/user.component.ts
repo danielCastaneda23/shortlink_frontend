@@ -31,7 +31,7 @@ export class UserComponent {
     };
 
 
-      this.userService.loginUser(payload);
+      this.userService.loginUser({ payload });
 
     // You can now use this.userService to access UserService methods
   }
